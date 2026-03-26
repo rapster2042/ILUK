@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline - Independent Life UK</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .offline-container {
+      background: white;
+      border-radius: 24px;
+      padding: 48px 32px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, #00CED1 0%, #FF1493 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .features {
+      background: #f8f9fa;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0;
+      text-align: left;
+    }
+
+    .features h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .features li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #00CED1;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, #00CED1 0%, #00B8D4 100%);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 206, 209, 0.3);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 206, 209, 0.4);
+    }
+
+    .button:active {
+      transform: translateY(0);
+    }
+
+    .status {
+      margin-top: 24px;
+      padding: 16px;
+      background: #fff3cd;
+      border-radius: 12px;
+      font-size: 14px;
+      color: #856404;
+    }
+
+    @media (max-width: 480px) {
+      .offline-container {
+        padding: 32px 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .icon {
+        width: 100px;
+        height: 100px;
+        font-size: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="icon">📱</div>
+    <h1>You're Offline</h1>
+    <p>No internet connection detected. Don't worry - Independent Life UK works offline!</p>
+    
+    <div class="features">
+      <h2>What You Can Still Do:</h2>
+      <ul>
+        <li>View previously loaded pages</li>
+        <li>Access saved learning materials</li>
+        <li>Review your progress and badges</li>
+        <li>Read housework and shopping guides</li>
+        <li>Check your saved budgeting plans</li>
+      </ul>
+    </div>
+
+    <div class="status">
+      <strong>Tip:</strong> Once you're back online, everything will sync automatically.
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="/" class="button" onclick="window.location.reload(); return false;">Try Again</a>
+    </div>
+
+    <p style="margin-top: 24px; font-size: 14px; color: #999;">
+      Independent Life UK - A web app to help young people with independent living developed for SAHA
+    </p>
+  </div>
+
+  <script>
+    // Check if online and auto-reload
+    window.addEventListener('online', function() {
+      window.location.reload();
+    });
+
+    // Update status if connection changes
+    function updateOnlineStatus() {
+      const status = document.querySelector('.status');
+      if (navigator.onLine) {
+        status.innerHTML = '<strong>✓ Back Online!</strong> Reloading...';
+        status.style.background = '#d4edda';
+        status.style.color = '#155724';
+        setTimeout(() => window.location.reload(), 1000);
+      }
+    }
+
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+  </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+{
+  "background_color": "#ffffff",
+  "description": "A complete app that helps young people 18+ to learn vital life skills for independant living. budgeting, bill payments, shopping, learning how do housework, cooking. Developed for SAHA",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Independent Life",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Independent Life",
+  "start_url": "https://app-8a0fiym6u1a9.appmedo.com/",
+  "theme_color": "#00CED1",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/ios/128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/ios/152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/ios/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/android/launchericon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "ILUK",
+  "lang": "en",
+  "categories": [
+    "education",
+    "finance",
+    "food",
+    "health",
+    "lifestyle",
+    "shopping",
+    "social"
+  ],
+  "screenshots": [
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-a.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-b.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-c.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-d.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-e.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-f.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-g.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-i.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/rapster2042/ILUK/icons/screenshots/iPhone-14-Pro-438x891-j.png",
+      "sizes": "438x891",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <circle cx="256" cy="256" r="256" fill="url(#gradient)"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- House/Home icon representing independent living -->
+  <path d="M256 120L140 200V360H220V280H292V360H372V200L256 120Z" fill="white" stroke="white" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Heart symbol representing care and support -->
+  <path d="M256 400C256 400 180 350 180 300C180 270 200 250 230 250C245 250 256 260 256 260C256 260 267 250 282 250C312 250 332 270 332 300C332 350 256 400 256 400Z" fill="white"/>
+</svg>
