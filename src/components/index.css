@@ -1,0 +1,212 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 1rem;
+    --background: 40 30% 98%;
+    --foreground: 220 10% 30%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 30%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 30%;
+    --primary: 165 45% 65%;
+    --primary-foreground: 220 10% 30%;
+    --primary-light: 165 45% 80%;
+    --secondary: 25 45% 75%;
+    --secondary-foreground: 220 10% 30%;
+    --muted: 220 10% 95%;
+    --muted-foreground: 220 8% 50%;
+    --accent: 165 40% 88%;
+    --accent-foreground: 220 10% 30%;
+    --success: 150 35% 65%;
+    --success-foreground: 220 10% 30%;
+    --warning: 40 70% 70%;
+    --warning-foreground: 220 10% 30%;
+    --destructive: 0 50% 70%;
+    --destructive-foreground: 0 0% 100%;
+    --crisis: 340 65% 65%;
+    --crisis-foreground: 0 0% 100%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 165 45% 65%;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+    /* Pastel card backgrounds */
+    --card-mint: 165 40% 92%;
+    --card-peach: 25 50% 90%;
+    --card-pink: 340 45% 92%;
+    --card-blue: 200 40% 92%;
+    --card-lavender: 260 35% 92%;
+  }
+
+  .dark {
+    --background: 220 15% 15%;
+    --foreground: 40 15% 90%;
+    --card: 220 15% 18%;
+    --card-foreground: 40 15% 90%;
+    --popover: 220 15% 18%;
+    --popover-foreground: 40 15% 90%;
+    --primary: 165 40% 55%;
+    --primary-foreground: 220 10% 30%;
+    --primary-light: 165 40% 70%;
+    --secondary: 25 40% 65%;
+    --secondary-foreground: 220 10% 30%;
+    --muted: 220 12% 25%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 165 30% 30%;
+    --accent-foreground: 40 15% 90%;
+    --success: 150 30% 55%;
+    --success-foreground: 220 10% 30%;
+    --warning: 40 65% 60%;
+    --warning-foreground: 220 15% 15%;
+    --destructive: 0 45% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --crisis: 340 60% 60%;
+    --crisis-foreground: 0 0% 100%;
+    --border: 220 12% 28%;
+    --input: 220 12% 28%;
+    --ring: 165 40% 55%;
+    
+    /* Pastel card backgrounds for dark mode */
+    --card-mint: 165 25% 25%;
+    --card-peach: 25 30% 28%;
+    --card-pink: 340 30% 25%;
+    --card-blue: 200 25% 25%;
+    --card-lavender: 260 25% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@layer components {
+  .text-size-small {
+    font-size: 14px;
+  }
+
+  .text-size-medium {
+    font-size: 16px;
+  }
+
+  .text-size-large {
+    font-size: 18px;
+  }
+
+  .contrast-high {
+    --foreground: 0 0% 0%;
+    --background: 0 0% 100%;
+    --border: 0 0% 50%;
+  }
+
+  .contrast-low {
+    --foreground: 220 8% 40%;
+    --background: 40 25% 96%;
+    --border: 40 10% 88%;
+  }
+
+  .reduced-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .card-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Pastel card backgrounds */
+  .bg-card-mint {
+    background-color: hsl(var(--card-mint));
+  }
+
+  .bg-card-peach {
+    background-color: hsl(var(--card-peach));
+  }
+
+  .bg-card-pink {
+    background-color: hsl(var(--card-pink));
+  }
+
+  .bg-card-blue {
+    background-color: hsl(var(--card-blue));
+  }
+
+  .bg-card-lavender {
+    background-color: hsl(var(--card-lavender));
+  }
+
+  .crisis-button {
+    @apply bg-[hsl(var(--crisis))] text-[hsl(var(--crisis-foreground))];
+    @apply hover:opacity-90 transition-opacity;
+    @apply font-semibold rounded-full px-6 py-3;
+    @apply shadow-lg;
+  }
+
+  .task-card {
+    @apply bg-card rounded-2xl p-5 card-soft;
+    @apply border border-border;
+    transition: var(--transition-smooth);
+  }
+
+  .task-card:hover {
+    @apply card-medium;
+  }
+
+  .mood-button {
+    @apply rounded-2xl p-4 transition-all;
+    @apply bg-muted;
+  }
+
+  .mood-button.selected {
+    @apply ring-2 ring-primary;
+  }
+
+  .badge-earned {
+    @apply bg-accent text-accent-foreground;
+    @apply rounded-xl p-4 text-center;
+    @apply border border-border;
+  }
+}
