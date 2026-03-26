@@ -1,2 +1,0 @@
-# ILUK
-Assets for ILUK
