@@ -1,0 +1,67 @@
+{
+  "routes": [
+    {
+      "src": "/icon-72.png",
+      "dest": "/icon-72.png"
+    },
+    {
+      "src": "/icon-96.png",
+      "dest": "/icon-96.png"
+    },
+    {
+      "src": "/icon-128.png",
+      "dest": "/icon-128.png"
+    },
+    {
+      "src": "/icon-144.png",
+      "dest": "/icon-144.png"
+    },
+    {
+      "src": "/icon-152.png",
+      "dest": "/icon-152.png"
+    },
+    {
+      "src": "/icon-192.png",
+      "dest": "/icon-192.png"
+    },
+    {
+      "src": "/icon-384.png",
+      "dest": "/icon-384.png"
+    },
+    {
+      "src": "/icon-512.png",
+      "dest": "/icon-512.png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "dest": "/apple-touch-icon.png"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
+    },
+    {
+      "src": "/manifest.webmanifest",
+      "dest": "/manifest.webmanifest",
+      "headers": {
+        "Content-Type": "application/manifest+json"
+      }
+    },
+    {
+      "src": "/sw.js",
+      "dest": "/sw.js"
+    },
+    {
+      "src": "/offline.html",
+      "dest": "/offline.html"
+    },
+    {
+      "src": "/(.*\\.(png|jpg|jpeg|svg|ico|webmanifest|js|css|woff|woff2))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
